@@ -3,15 +3,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet"  href="style.css" >
+    <link rel="stylesheet"  href="./css/style.css" >
     <title>Document</title>
 </head>
 <body>  
+    <!-- Div contaner will contain main info about users and their repos -->
     <div class="container " id="container"  >
         <div id="search-box" class="search-box" >
-            <input class="search" placeholder="Search username" />
-            <button class="btn-search btn1" onclick="getRepos()" > Search </button>
+            <input id="search" class="search" placeholder="Search username" required />
+            <button class="btn-search btn1" type="submit" onclick="search()" > Search </button>
         </div>
+        <!-- Profile info -->
         <div id="user-info" class="none" >
             <img id="img-profile" class="img-profile" src="" alt="profile">
             <div class="user-details" >
@@ -19,16 +21,17 @@
                 <h1 id="full-name" ></h1>
                 <p>ñojoij</p>
             </div>
-            
         </div>
-        <h2>Repositories</h2>
-        <hr>
+        <!-- Repos info -->
+        <h2 id="h2" class="none" >Repositories</h2>
+        <hr id="hr" class="none" >
+        <!--This div will be filled by a javascript function-->
         <div id="repos" >
 
         </div>
 
     </div>
     
-    <script type="text/javascript" src="./repos.js" > </script>
+    <script type="text/javascript" src="./js/repos.js" > </script>
 </body>
 </html>
