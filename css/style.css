@@ -10,9 +10,10 @@ body {
     border-radius: 8px;
     width: 500px;
     top: 10%;
-    left: 26.8%;
+    left: 32.1%;
     padding: 40px;
     box-shadow: 8px 9px 25px 0px rgba(0,0,0,0.75);
+    font-family: 'Open Sans', sans-serif;
     
 }
 .search-box {
@@ -66,11 +67,11 @@ body {
 }
 .user-details h1 {
     padding: 0 !important;
-    margin-block-start: 5px;
-    margin-block-end: 5px;
+    margin-block-start: 7px;
+    margin-block-end: 7px;
 }
 .user-details p {
-    margin-block-start: 0 !important;
+    margin-block-start: 0px !important;
     margin-block-end: 0 !important;
 }
 .img-profile {
@@ -86,11 +87,11 @@ body {
 }
 .hr{
     margin-left: 17px;
-    font-weight: bold;
     border: solid 2px;
+    color: grey;
 }
 .repos {
-    height: 300px;
+    height: 250px;
     overflow-x: auto;
 }
 .repos-info{
@@ -120,10 +121,29 @@ body {
     height: 30px;
     background-color: rgba(207, 106, 107, 0.5);
     margin-left: 17px;
+    border-radius: 3px;
 
 }
 .err-msg {
     padding: 4px;
+    font-weight: bold;
     color: rgba(12, 0, 1, 0.5);
     
 }
+@media screen and (max-width: 1500px) {
+    .container {
+        position: relative;
+        background-color: white;
+        border-radius: 8px;
+        width: 400px;
+        top: 10%;
+        left: 31.8%;
+        padding: 40px;
+        box-shadow: 8px 9px 25px 0px rgba(0,0,0,0.75);
+        
+    }
+    .repos {
+        height: 190px;
+        overflow-x: auto;
+    }
+  }

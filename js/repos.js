@@ -41,6 +41,7 @@ function header(repos){
       document.getElementById('img-profile').className ='img-profile'
       document.getElementById('user-name').innerHTML=`<i>@${user}</i>`
       document.getElementById('full-name').innerHTML=user
+      document.getElementById('bio').innerHTML='This is the bio...'
       document.getElementById('h2').className='dispay-info'
       document.getElementById('h2').style.marginLeft='17px'
       document.getElementById('hr').className='hr'
