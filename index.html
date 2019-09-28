@@ -10,24 +10,31 @@
     <!-- Div contaner will contain main info about users and their repos -->
     <div class="container " id="container"  >
         <div id="search-box" class="search-box" >
-            <input id="search" class="search" placeholder="Search username" required />
+            <input id="search" class="search" placeholder="Search username..." required />
             <button class="btn-search btn1" type="submit" onclick="search()" > Search </button>
         </div>
         <!-- Profile info -->
-        <div id="user-info" class="none" >
-            <img id="img-profile" class="img-profile" src="" alt="profile">
-            <div class="user-details" >
-                <p id="user-name" ></p>
-                <h1 id="full-name" ></h1>
-                <p>ñojoij</p>
+        <div class="info-container" >
+            <div id="user-info" class="none" >
+                <img id="img-profile" class="img-profile" src="" alt="profile">
+                <div class="user-details" >
+                    <p id="user-name" ></p>
+                    <h1 id="full-name" ></h1>
+                    <p></p>
+                </div>
             </div>
-        </div>
-        <!-- Repos info -->
-        <h2 id="h2" class="none" >Repositories</h2>
-        <hr id="hr" class="none" >
-        <!--This div will be filled by a javascript function-->
-        <div id="repos" >
-
+            <!-- Repos info -->
+            <h2 id="h2" class="none" >Repositories</h2>
+            <hr id="hr" class="none" >
+            <!--This div will be filled by a javascript function-->
+            <div id="error" class="" >
+                <p id="err-msg" class="none" >
+                    Not found
+                </p>
+            </div>
+            <div id="repos" class="none" >
+    
+            </div>
         </div>
 
     </div>

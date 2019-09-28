@@ -7,15 +7,13 @@ body {
 .container {
     position: relative;
     background-color: white;
-    border-radius: 6px;
-    width: 700px;
-    height: auto;
+    border-radius: 8px;
+    width: 500px;
     top: 10%;
     left: 26.8%;
     padding: 40px;
     box-shadow: 8px 9px 25px 0px rgba(0,0,0,0.75);
-    overflow-x: hidden; 
-    overflow-x: auto; 
+    
 }
 .search-box {
     display: flex;
@@ -53,6 +51,9 @@ body {
     display: none;
 }
 /* user info */
+.info-container{
+    margin-top: 20px;
+}
 .user-info {
     position: relative;
     display: flex;
@@ -65,8 +66,8 @@ body {
 }
 .user-details h1 {
     padding: 0 !important;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
 }
 .user-details p {
     margin-block-start: 0 !important;
@@ -88,6 +89,10 @@ body {
     font-weight: bold;
     border: solid 2px;
 }
+.repos {
+    height: 300px;
+    overflow-x: auto;
+}
 .repos-info{
     margin-left: 17px;
     display: flex;
@@ -107,6 +112,18 @@ body {
     height: 15px;
     padding: 0 2px;
 }
-.cout-star{
+.count-star{
     padding-right: 5px;
+}
+.container-error{
+    width: 97.5%;
+    height: 30px;
+    background-color: rgba(207, 106, 107, 0.5);
+    margin-left: 17px;
+
+}
+.err-msg {
+    padding: 4px;
+    color: rgba(12, 0, 1, 0.5);
+    
 }
